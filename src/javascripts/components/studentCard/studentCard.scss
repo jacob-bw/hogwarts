@@ -16,6 +16,9 @@
       width: 100%;
     }
   }
+  h3 {
+    @include default-font(20px);
+  }
 }
 
 .student-gryffindor{

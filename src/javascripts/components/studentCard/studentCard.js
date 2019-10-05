@@ -7,7 +7,6 @@ const createStudentCard = (student, house) => {
       <img src=${student.picture}>
     </div>
     <h3>${student.name}</h3>
-    <h3>${house.name}</h3>
   </li>
   `;
   return domString;
