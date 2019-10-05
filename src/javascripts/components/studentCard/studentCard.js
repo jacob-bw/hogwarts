@@ -1,12 +1,13 @@
 import './studentCard.scss';
 
-const createStudentCard = (student) => {
+const createStudentCard = (student, house) => {
   const domString = `
-  <li class="student-card">
-  <div class="img-holder">
-  <img src=${student.picture}>
-  </div>
-  <h2>${student.name}</h2>
+  <li class="student-${house.name.toLowerCase()}">
+    <div class="img-holder">
+      <img src=${student.picture}>
+    </div>
+    <h3>${student.name}</h3>
+    <h3>${house.name}</h3>
   </li>
   `;
   return domString;
